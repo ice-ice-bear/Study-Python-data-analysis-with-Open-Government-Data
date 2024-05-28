@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_460b7c3b20d48e746a0566d1012cf96c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_460b7c3b20d48e746a0566d1012cf96c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_460b7c3b20d48e746a0566d1012cf96c = L.map(
+                "map_460b7c3b20d48e746a0566d1012cf96c",
+                {
+                    center: [37.5407771828983, 37.4939223326479],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fc6caad1ff1af2699a3ddddf133642c7 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_fc6caad1ff1af2699a3ddddf133642c7.addTo(map_460b7c3b20d48e746a0566d1012cf96c);
+        
+    
+            var marker_298f3b58db0c691766b2192bdaf48a8a = L.marker(
+                [37.4795992772291, 126.952165618801],
+                {}
+            ).addTo(map_460b7c3b20d48e746a0566d1012cf96c);
+        
+    
+            var icon_b44585e59eb333d2f603168b848d27f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_298f3b58db0c691766b2192bdaf48a8a.setIcon(icon_b44585e59eb333d2f603168b848d27f9);
+        
+    
+        var popup_fac2f5c5c1b1406788e32a9738e50d6d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e042cf54aada7016c182b254dc8abbfd = $(`<div id="html_e042cf54aada7016c182b254dc8abbfd" style="width: 100.0%; height: 100.0%;"><i>배스킨라빈스-서울특별시 관악구 관악로 161</i></div>`)[0];
+                popup_fac2f5c5c1b1406788e32a9738e50d6d.setContent(html_e042cf54aada7016c182b254dc8abbfd);
+            
+        
+
+        marker_298f3b58db0c691766b2192bdaf48a8a.bindPopup(popup_fac2f5c5c1b1406788e32a9738e50d6d)
+        ;
+
+        
+    
+    
+            marker_298f3b58db0c691766b2192bdaf48a8a.bindTooltip(
+                `<div>
+                     배스킨라빈스-서울특별시 관악구 관악로 161
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            tile_layer_fc6caad1ff1af2699a3ddddf133642c7.addTo(map_460b7c3b20d48e746a0566d1012cf96c);
+        
+    
+            var marker_bac7f90d202ba421a724d046299edb8d = L.marker(
+                [37.5592633574637, 126.945369118218],
+                {}
+            ).addTo(map_460b7c3b20d48e746a0566d1012cf96c);
+        
+    
+            var icon_803707e1ce33f4ab4b037a5a785366f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bac7f90d202ba421a724d046299edb8d.setIcon(icon_803707e1ce33f4ab4b037a5a785366f3);
+        
+    
+        var popup_564937aa2df638bf32b09047a5c764b9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e739cc9c12293da0bcc392286c086f8e = $(`<div id="html_e739cc9c12293da0bcc392286c086f8e" style="width: 100.0%; height: 100.0%;"><i>던킨도너츠-서울특별시 서대문구 이화여대길 56</i></div>`)[0];
+                popup_564937aa2df638bf32b09047a5c764b9.setContent(html_e739cc9c12293da0bcc392286c086f8e);
+            
+        
+
+        marker_bac7f90d202ba421a724d046299edb8d.bindPopup(popup_564937aa2df638bf32b09047a5c764b9)
+        ;
+
+        
+    
+    
+            marker_bac7f90d202ba421a724d046299edb8d.bindTooltip(
+                `<div>
+                     던킨도너츠-서울특별시 서대문구 이화여대길 56
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            tile_layer_fc6caad1ff1af2699a3ddddf133642c7.addTo(map_460b7c3b20d48e746a0566d1012cf96c);
+        
+    
+            var marker_a665048306758efa2caaf80b22844b1f = L.marker(
+                [37.53571340911, 127.095680669092],
+                {}
+            ).addTo(map_460b7c3b20d48e746a0566d1012cf96c);
+        
+    
+            var icon_c17b90f77c5e45e759527c912caf4b8c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a665048306758efa2caaf80b22844b1f.setIcon(icon_c17b90f77c5e45e759527c912caf4b8c);
+        
+    
+        var popup_75607fbfc355ab0c6664a4b07b925a48 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8d6e4fe929ee546e1b62678ce53a9858 = $(`<div id="html_8d6e4fe929ee546e1b62678ce53a9858" style="width: 100.0%; height: 100.0%;"><i>던킨도너츠테크노마트점-서울특별시 광진구 광나루로56길 85</i></div>`)[0];
+                popup_75607fbfc355ab0c6664a4b07b925a48.setContent(html_8d6e4fe929ee546e1b62678ce53a9858);
+            
+        
+
+        marker_a665048306758efa2caaf80b22844b1f.bindPopup(popup_75607fbfc355ab0c6664a4b07b925a48)
+        ;
+
+        
+    
+    
+            marker_a665048306758efa2caaf80b22844b1f.bindTooltip(
+                `<div>
+                     던킨도너츠테크노마트점-서울특별시 광진구 광나루로56길 85
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            tile_layer_fc6caad1ff1af2699a3ddddf133642c7.addTo(map_460b7c3b20d48e746a0566d1012cf96c);
+        
+    
+            var marker_af05d4191c07544cdfd221663caa61c1 = L.marker(
+                [37.5521037605846, 126.923808588686],
+                {}
+            ).addTo(map_460b7c3b20d48e746a0566d1012cf96c);
+        
+    
+            var icon_d1ab63036bebcfa7a89b061c35ef4595 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_af05d4191c07544cdfd221663caa61c1.setIcon(icon_d1ab63036bebcfa7a89b061c35ef4595);
+        
+    
+        var popup_09843e7c434f15e69e53d91692c7cdb9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_020ea2a9cc13f18c1b48109f04cf36e4 = $(`<div id="html_020ea2a9cc13f18c1b48109f04cf36e4" style="width: 100.0%; height: 100.0%;"><i>베스킨라빈스-서울특별시 마포구 와우산로 88</i></div>`)[0];
+                popup_09843e7c434f15e69e53d91692c7cdb9.setContent(html_020ea2a9cc13f18c1b48109f04cf36e4);
+            
+        
+
+        marker_af05d4191c07544cdfd221663caa61c1.bindPopup(popup_09843e7c434f15e69e53d91692c7cdb9)
+        ;
+
+        
+    
+    
+            marker_af05d4191c07544cdfd221663caa61c1.bindTooltip(
+                `<div>
+                     베스킨라빈스-서울특별시 마포구 와우산로 88
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            tile_layer_fc6caad1ff1af2699a3ddddf133642c7.addTo(map_460b7c3b20d48e746a0566d1012cf96c);
+        
+    
+            var marker_a74b5a58c2a54e2fd58571ca2eeb6eb6 = L.marker(
+                [37.6551008385145, 127.050817590545],
+                {}
+            ).addTo(map_460b7c3b20d48e746a0566d1012cf96c);
+        
+    
+            var icon_ee400b0eafb285b72b649fd0e780e645 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a74b5a58c2a54e2fd58571ca2eeb6eb6.setIcon(icon_ee400b0eafb285b72b649fd0e780e645);
+        
+    
+        var popup_73b028971a8efbc4a16cf688d89e7027 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a663ddafe477445aaa505ddff66e3d25 = $(`<div id="html_a663ddafe477445aaa505ddff66e3d25" style="width: 100.0%; height: 100.0%;"><i>던킨도너츠창동하나로-서울특별시 도봉구 마들로11길 20</i></div>`)[0];
+                popup_73b028971a8efbc4a16cf688d89e7027.setContent(html_a663ddafe477445aaa505ddff66e3d25);
+            
+        
+
+        marker_a74b5a58c2a54e2fd58571ca2eeb6eb6.bindPopup(popup_73b028971a8efbc4a16cf688d89e7027)
+        ;
+
+        
+    
+    
+            marker_a74b5a58c2a54e2fd58571ca2eeb6eb6.bindTooltip(
+                `<div>
+                     던킨도너츠창동하나로-서울특별시 도봉구 마들로11길 20
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            tile_layer_fc6caad1ff1af2699a3ddddf133642c7.addTo(map_460b7c3b20d48e746a0566d1012cf96c);
+        
+    
+            var marker_8559cec18b248f2f93f17c52f2c22de8 = L.marker(
+                [37.527902979157, 126.963222625326],
+                {}
+            ).addTo(map_460b7c3b20d48e746a0566d1012cf96c);
+        
+    
+            var icon_8c50bb91ff50fe65f4df33994334b1a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8559cec18b248f2f93f17c52f2c22de8.setIcon(icon_8c50bb91ff50fe65f4df33994334b1a1);
+        
+    
+        var popup_c6f598ceb505c26f6f356b332b4c0bb8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f038437e8874de7a76852df76edb3abf = $(`<div id="html_f038437e8874de7a76852df76edb3abf" style="width: 100.0%; height: 100.0%;"><i>던킨도너츠용산민자역사2호-서울특별시 용산구 한강대로21나길 7</i></div>`)[0];
+                popup_c6f598ceb505c26f6f356b332b4c0bb8.setContent(html_f038437e8874de7a76852df76edb3abf);
+            
+        
+
+        marker_8559cec18b248f2f93f17c52f2c22de8.bindPopup(popup_c6f598ceb505c26f6f356b332b4c0bb8)
+        ;
+
+        
+    
+    
+            marker_8559cec18b248f2f93f17c52f2c22de8.bindTooltip(
+                `<div>
+                     던킨도너츠용산민자역사2호-서울특별시 용산구 한강대로21나길 7
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            tile_layer_fc6caad1ff1af2699a3ddddf133642c7.addTo(map_460b7c3b20d48e746a0566d1012cf96c);
+        
+    
+            var marker_3ed32f95b6f090ad0d2b293953c865b5 = L.marker(
+                [37.5074307158543, 127.090004643288],
+                {}
+            ).addTo(map_460b7c3b20d48e746a0566d1012cf96c);
+        
+    
+            var icon_e36cfb6a4e268724324af039c533e1ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3ed32f95b6f090ad0d2b293953c865b5.setIcon(icon_e36cfb6a4e268724324af039c533e1ee);
+        
+    
+        var popup_e0abe9af0094675681a1e1608ba01e9d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e9510548e7a9bed40d584ca53021bf71 = $(`<div id="html_e9510548e7a9bed40d584ca53021bf71" style="width: 100.0%; height: 100.0%;"><i>던킨도너츠-서울특별시 송파구 석촌호수로 118</i></div>`)[0];
+                popup_e0abe9af0094675681a1e1608ba01e9d.setContent(html_e9510548e7a9bed40d584ca53021bf71);
+            
+        
+
+        marker_3ed32f95b6f090ad0d2b293953c865b5.bindPopup(popup_e0abe9af0094675681a1e1608ba01e9d)
+        ;
+
+        
+    
+    
+            marker_3ed32f95b6f090ad0d2b293953c865b5.bindTooltip(
+                `<div>
+                     던킨도너츠-서울특별시 송파구 석촌호수로 118
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            tile_layer_fc6caad1ff1af2699a3ddddf133642c7.addTo(map_460b7c3b20d48e746a0566d1012cf96c);
+        
+    
+            var marker_f5d3923f2b548749b2941788775d048c = L.marker(
+                [37.4504329374086, 126.910404780748],
+                {}
+            ).addTo(map_460b7c3b20d48e746a0566d1012cf96c);
+        
+    
+            var icon_b69d331a762c7482f852bc5ee17ba139 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f5d3923f2b548749b2941788775d048c.setIcon(icon_b69d331a762c7482f852bc5ee17ba139);
+        
+    
+        var popup_6067e2447cb9ab037494376306a21090 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_696074bf6dd1aaface590280cbdbcabf = $(`<div id="html_696074bf6dd1aaface590280cbdbcabf" style="width: 100.0%; height: 100.0%;"><i>베스킨라빈스은행나무점-서울특별시 금천구 금하로 726-1</i></div>`)[0];
+                popup_6067e2447cb9ab037494376306a21090.setContent(html_696074bf6dd1aaface590280cbdbcabf);
+            
+        
+
+        marker_f5d3923f2b548749b2941788775d048c.bindPopup(popup_6067e2447cb9ab037494376306a21090)
+        ;
+
+        
+    
+    
+            marker_f5d3923f2b548749b2941788775d048c.bindTooltip(
+                `<div>
+                     베스킨라빈스은행나무점-서울특별시 금천구 금하로 726-1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            tile_layer_fc6caad1ff1af2699a3ddddf133642c7.addTo(map_460b7c3b20d48e746a0566d1012cf96c);
+        
+    
+            var marker_0761d1752313228df25eae71fbd9b70e = L.marker(
+                [37.5859595247512, 127.029198268427],
+                {}
+            ).addTo(map_460b7c3b20d48e746a0566d1012cf96c);
+        
+    
+            var icon_ab75501e50f902d0a6c1a439ea822ff0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0761d1752313228df25eae71fbd9b70e.setIcon(icon_ab75501e50f902d0a6c1a439ea822ff0);
+        
+    
+        var popup_a92c56ffde2bd7312fdfc5ed65535039 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac58129268819e3a7b9bcb25b7e6b43c = $(`<div id="html_ac58129268819e3a7b9bcb25b7e6b43c" style="width: 100.0%; height: 100.0%;"><i>던킨도너츠-서울특별시 성북구 인촌로24길 6</i></div>`)[0];
+                popup_a92c56ffde2bd7312fdfc5ed65535039.setContent(html_ac58129268819e3a7b9bcb25b7e6b43c);
+            
+        
+
+        marker_0761d1752313228df25eae71fbd9b70e.bindPopup(popup_a92c56ffde2bd7312fdfc5ed65535039)
+        ;
+
+        
+    
+    
+            marker_0761d1752313228df25eae71fbd9b70e.bindTooltip(
+                `<div>
+                     던킨도너츠-서울특별시 성북구 인촌로24길 6
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            tile_layer_fc6caad1ff1af2699a3ddddf133642c7.addTo(map_460b7c3b20d48e746a0566d1012cf96c);
+        
+    
+            var marker_0976ab8c66859cb4d80905079a457d91 = L.marker(
+                [37.4910149025567, 127.013839288302],
+                {}
+            ).addTo(map_460b7c3b20d48e746a0566d1012cf96c);
+        
+    
+            var icon_bc78ebb400cad2ac2cb5806cffd2cebd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0976ab8c66859cb4d80905079a457d91.setIcon(icon_bc78ebb400cad2ac2cb5806cffd2cebd);
+        
+    
+        var popup_d93a23306bd3141488e1ca0a82028638 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_da7e0e686536452263702e13e2cdc34b = $(`<div id="html_da7e0e686536452263702e13e2cdc34b" style="width: 100.0%; height: 100.0%;"><i>던킨도너츠교대점-서울특별시 서초구 서초중앙로 105</i></div>`)[0];
+                popup_d93a23306bd3141488e1ca0a82028638.setContent(html_da7e0e686536452263702e13e2cdc34b);
+            
+        
+
+        marker_0976ab8c66859cb4d80905079a457d91.bindPopup(popup_d93a23306bd3141488e1ca0a82028638)
+        ;
+
+        
+    
+    
+            marker_0976ab8c66859cb4d80905079a457d91.bindTooltip(
+                `<div>
+                     던킨도너츠교대점-서울특별시 서초구 서초중앙로 105
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
